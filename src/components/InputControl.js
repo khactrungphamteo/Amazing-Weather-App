@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import { BsSearch } from "react-icons/bs";
 import { BiReset } from "react-icons/bi";
-import { API_KEY, countries, states } from "../services/weatherService";
+import {  countries, states } from "../services/weatherService";
+import { API_KEY } from "../key";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Toast } from "bootstrap";

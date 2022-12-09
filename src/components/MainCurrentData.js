@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { toast, ToastContainer } from "react-toastify";
-import { API_KEY } from "../services/weatherService";
+import { API_KEY } from "../key";
 import { formatToLocalTime, iconUrlFromCode } from "../services/weatherService";
 
 function MainCurrentData(props) {
