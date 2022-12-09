@@ -14,7 +14,7 @@ function DailyForcast(props) {
         let longitude = props.coordinate.lon;
         // console.log(lattitude);
         // console.log(longitude);
-        const url = `http://api.openweathermap.org/data/2.5/forecast/daily?lat=${lattitude}&lon=${longitude}&units=metric&appid=${API_KEY}`;
+        const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lattitude}&lon=${longitude}&units=metric&appid=${API_KEY}`;
         const response = await fetch(url);
 
         if (!response.ok) {

@@ -21,7 +21,7 @@ export default function InputControl(props) {
     toast.info("Fetching weather conditions for " + city);
 
     try {
-      const url = `http://api.openweathermap.org/geo/1.0/direct?q=${city},${stateCode},${countryCode}&appid=${API_KEY}`;
+      const url = `https://api.openweathermap.org/geo/1.0/direct?q=${city},${stateCode},${countryCode}&appid=${API_KEY}`;
       const response = await fetch(url);
 
       if (!response.ok) {

@@ -10,7 +10,7 @@ function MainCurrentData(props) {
       try {
         let lattitude = props.coordinate.lat;
         let longitude = props.coordinate.lon;
-        const url = `http://api.openweathermap.org/data/2.5/weather?lat=${lattitude}&lon=${longitude}&units=metric&appid=${API_KEY}`;
+        const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lattitude}&lon=${longitude}&units=metric&appid=${API_KEY}`;
         const response = await fetch(url);
 
         if (!response.ok) {
